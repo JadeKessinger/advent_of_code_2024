@@ -45,4 +45,5 @@ for line in f:
     l1.append(int(split_line[0]))
     l2.append(int(split_line[1]))
 
-print(calculate_similarity_score(l1, l2))
+print("Distance Sum: " + str(sum_distance(l1, l2)))
+print("Similarity Score: " + str(calculate_similarity_score(l1, l2)))
