@@ -1,7 +1,7 @@
 def sum_distance(l1, l2):
     ''' 
-    Calculates the sum of the distances between two lists by sorting them and 
-    taking the difference between every pair of elements.
+    Calculates the sum of the distances between two lists by sorting them and taking the difference between every pair 
+    of elements.
     
     Inputs:
     - l1 and l2, two integer lists of equal length
@@ -20,9 +20,8 @@ def sum_distance(l1, l2):
 
 def calculate_similarity_score(l1, l2):
     '''
-    Calculates the similarity score between two lists by multiplying the number
-    of times an integer from the first list appears in the second list by that 
-    integer.
+    Calculates the similarity score between two lists by multiplying the number of times an integer from the first list 
+    appears in the second list by that integer.
     
     Inputs:
     - l1 and l2, two integer lists of equal length
