@@ -47,9 +47,32 @@ def is_word_in_direction(direction, coordinate, word, puzzle):
         (col_change, row_change) = direction
         return is_word_in_direction(direction, (col + col_change, row + row_change), word[1:], puzzle)
     
+def x_mas_search(puzzle):
+    '''
+    Counts how many times X-MAS appears in the puzzle, where X-MAS is two MAS words on the diagonals that share the "A"
+    and form a cross.
+
+    Inputs:
+    - puzzle: a list of Strings representing a word search puzzle
+
+    Outputs: how many times X-MAS appears in the puzzle
+    '''
+    result = 0
+    for row in range(1, len(puzzle) - 1):
+        for col in range(1, len(puzzle[row]) - 1):
+            if puzzle[row][col] == "A":
+                if (((puzzle[row-1][col-1] == "M" and puzzle[row+1][col+1] == "S") or 
+                     (puzzle[row-1][col-1] == "S" and puzzle[row+1][col+1] == "M")) and
+                    ((puzzle[row-1][col+1] == "M" and puzzle[row+1][col-1] == "S") or
+                     (puzzle[row-1][col+1] == "S" and puzzle[row+1][col-1] == "M"))):
+                    result += 1
+
+    return result
+    
 f = open("day4.txt", "r")
 puzzle = []
 for line in f:
     puzzle.append(line)
 
 print("XMAS Word Search: " + str(word_search("XMAS", puzzle)))
+print("X-MAS Word Search: " + str(x_mas_search(puzzle)))
