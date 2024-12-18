@@ -83,7 +83,7 @@ def parse_one_to_three_digit_number(s):
             break
     return number
 
-f = open("day3.txt", "r")
+f = open("inputs/day03.txt", "r")
 lines = []
 for line in f:
     lines.append(line)

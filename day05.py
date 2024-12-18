@@ -89,7 +89,7 @@ def correct_invalid_update(rules_dict, update):
             update = update[0:original_page_index] + update[original_page_index+1:]
     return update       
 
-f = open("day5.txt", "r")
+f = open("inputs/day05.txt", "r")
 rule_lines = True
 rules = []
 updates = []

@@ -39,7 +39,7 @@ def calculate_similarity_score(l1, l2):
 l1 = []
 l2 = []
 
-f = open("day1.txt", "r")
+f = open("inputs/day01.txt", "r")
 for line in f:
     split_line = line.split()
     l1.append(int(split_line[0]))

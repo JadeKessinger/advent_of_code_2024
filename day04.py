@@ -69,7 +69,7 @@ def x_mas_search(puzzle):
 
     return result
     
-f = open("day4.txt", "r")
+f = open("inputs/day04.txt", "r")
 puzzle = []
 for line in f:
     puzzle.append(line)

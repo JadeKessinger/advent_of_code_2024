@@ -57,7 +57,7 @@ def is_report_safe(report):
     return True
 
 reports = []
-f = open("day2.txt", "r")
+f = open("inputs/day02.txt", "r")
 for line in f:
     report = line.split()
     report = [int(level) for level in report]

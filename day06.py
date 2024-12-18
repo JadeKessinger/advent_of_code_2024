@@ -46,7 +46,7 @@ def get_starting_guard(map):
         elif "<" in map[row]:
             return ((row, map[row].index("<")), Directions.LEFT)
         
-f = open("day6.txt", "r")
+f = open("inputs/day06.txt", "r")
 map = []
 for line in f:
     map.append(line)
